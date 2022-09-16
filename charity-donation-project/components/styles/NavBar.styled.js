@@ -1,10 +1,10 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 export const StyledHeader = styled.header`
-  background-color: ${({ theme }) => theme.colors.header};
+  background-color: ${({ theme }) => theme.body};
   padding: 0px 0;
   height: auto;
-`
+`;
 
 export const Nav = styled.nav`
   display: flex;
@@ -15,15 +15,15 @@ export const Nav = styled.nav`
   @media (max-width: ${({ theme }) => theme.mobile}) {
     flex-direction: column;
   }
-`
+`;
 
 export const Logo = styled.img`
   @media (max-width: ${({ theme }) => theme.mobile}) {
     margin-bottom: 10px;
   }
 
-width: 375px;
-`
+  width: 375px;
+`;
 /*
   @media (max-width: ${({ theme }) => theme.mobile}) {
     margin-bottom: 10px;
@@ -41,7 +41,7 @@ export const Switch = styled.div`
   position: relative;
   width: 60px;
   height: 28px;
-  background: #b3b3b3;
+  background: #000;
   border-radius: 32px;
   padding: 4px;
   transition: 300ms all;
@@ -74,7 +74,6 @@ export const Input = styled.input`
 `;
 
 export const Span = styled.span`
-padding-top: 10px;
-width: 180px;
+  padding-top: 10px;
+  width: 180px;
 `;
-

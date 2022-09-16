@@ -81,8 +81,6 @@ export const GridColumn = styled.div`
   padding-right: ${remy(15)};
   padding-left: ${remy(15)};
 
-
-
   // Columns for mobile
   ${({ xs }) => (xs ? getFlex(xs) : "flex: 0 0 100%")};
   ${({ xs }) => (xs ? getWidth(xs) : "width: 100%")};
@@ -132,27 +130,21 @@ export const CardFront = styled.div`
   font-weight: bold;
   text-align: center;
   
-  border: 2px solid palevioletred;
-  border-radius: 3px;
+
 
   width: 350px;
   margin-left -10px;
-`
+`;
 export const CardImage = styled.img`
 
   width: 440px;
   height: 200px;
   padding-bottom: 
   margin-left: -40px;
-`
+`;
 export const CardTitle = styled.h2`
   font-size: ${remy(21)};
-`
-
-
-
-
-
+`;
 
 export const Container = styled.div`
   height: 7px;
@@ -181,15 +173,9 @@ export const Progress = styled(BaseBox)`
   width: ${({ percent }) => percent}%;
 `;
 
-
 export const Amount = styled(BaseBox)`
-margin-top: 20px;
-margin-left: -40px;
-margin-bottom: 20px;
-font-size: ${remy(21)};
+  margin-top: 20px;
+  margin-left: -40px;
+  margin-bottom: 20px;
+  font-size: ${remy(21)};
 `;
-
-
-
-
-

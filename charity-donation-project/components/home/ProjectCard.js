@@ -18,7 +18,7 @@ import content from "../home/content";
 import { Button } from "../styles/DonateButton.styled";
 
 const Layout = () => {
-  const [percent, setPercent] = useState(50);
+  const [percent, setPercent] = useState(80);
 
   return (
     <>
@@ -29,15 +29,15 @@ const Layout = () => {
               <GridColumn sm="6" lg="4">
                 <Card key={index}>
                   <CardFront>
-                    <CardImage src="./images/A.png" />
+                    <CardImage src={`./images/${item.image}`} />
                   </CardFront>
-                  <CardTitle>Build School in Wellawaya Sri Lanka</CardTitle>
+                  <CardTitle>{item.title}</CardTitle>
 
                   <div>
                     <Container>
                       <Background />
-                      <Progress percent={percent} />
-                      <Amount>$7000</Amount>
+                      <Progress percent={item.Progress} />
+                      <Amount>${item.amount}</Amount>
                     </Container>
                   </div>
 
